@@ -6,7 +6,7 @@ This determination of the correct linker and link flags has sometimes been a cha
 ## Usage
 Build with, for example:
 ```
-FC=mpif90 CC=mpicc CXX=mpic++ cmake .
+FC=mpif90 CC=mpicc CXX=mpicxx cmake .
 make VERBOSE=1
 ```
 

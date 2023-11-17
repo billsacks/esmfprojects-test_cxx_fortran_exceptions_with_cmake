@@ -1,5 +1,6 @@
 #include <iostream>
 #include <exception>
+#include <stdexcept>
 
 extern "C" void normal_vec(int seed, int n, double x[]);
 
