@@ -30,3 +30,8 @@ CMakeFiles/testprog.dir/build.make:117: recipe for target 'testprog' failed
 make[2]: *** [testprog] Error 1
 ```
 
+It **does** work on cheyenne and derecho with the intel compiler if we add the following line at the end of CMakeLists.txt:
+
+```
+set_target_properties(testprog PROPERTIES LINKER_LANGUAGE Fortran)
+```
