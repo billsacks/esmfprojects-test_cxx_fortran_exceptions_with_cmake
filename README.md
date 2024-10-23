@@ -35,3 +35,11 @@ It **does** work on cheyenne and derecho with the intel compiler if we add the f
 ```
 set_target_properties(testprog PROPERTIES LINKER_LANGUAGE Fortran)
 ```
+
+Note that this also does **not** work on the Mac system green (which uses clang) when adding:
+
+```
+set_target_properties(testprog PROPERTIES LINKER_LANGUAGE Fortran)
+```
+
+at the end of CMakeLists.txt.
